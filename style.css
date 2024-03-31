@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: whitesmoke;
+    
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    background-image: linear-gradient(300deg, #280c6b, #000000, #4c0b5a);
+    background-size: 180% 180%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+  
+.clock-container{
+    margin: 5px;
+}
+
+.button{
+    padding:1rem;
+    font-size: 1rem;
+    /* background-color: #3da13a;  */
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+.clock-circle{
+    border: 5px solid white;
+    padding: 2rem;
+    margin: 1.75rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+
+.btn-wrapper .button{
+    box-shadow: -3px 5px 10px rgba(161, 161, 161, 0.3); /*box-shadow: none|h-offset v-offset blur spread color */
+    border: .75px solid white;
+}
+
+.pl{
+    background-color: green;
+}
+
+.reset{
+    background-color: rgb(153, 25, 25);
+}
+
+.lap{
+    background-color: rgb(119, 119, 12);
+}
+
+.ps{
+    background-color: rgb(156, 26, 26);
+}
+
+.clock-incircle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    font-size: 2.2rem;
+    
+}
+
+.milli{
+    font-size: large;
+    
+}
+
+.lap-container{
+    margin-top: 40px;
+    height:90px;
+    overflow-y: auto;  /*over flow property provides the scroll option if more content is there than the div can hold*/
+}                      /*values:    scroll: will show the scroll always even though content doest overflows
+                                    auto:shows scroll only when text overflows
